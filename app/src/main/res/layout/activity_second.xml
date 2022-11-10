@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second_Activity">
+
+    <TextView
+        android:id="@+id/secondTitle"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/secondImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="@+id/countTitle"
+        app:layout_constraintTop_toBottomOf="@+id/secondTitle"
+        app:srcCompat="@drawable/juice" />
+
+    <TextView
+        android:id="@+id/countTitle"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="13dp"
+        android:text="Count:"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/countVal"
+        app:layout_constraintEnd_toStartOf="@+id/countVal"
+        app:layout_constraintStart_toStartOf="@+id/totalTitle" />
+
+    <TextView
+        android:id="@+id/totalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Total Price:"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/totalPrice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalCalorieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calorie"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/totalCalorie"
+        app:layout_constraintStart_toStartOf="@+id/totalTitle" />
+
+    <TextView
+        android:id="@+id/countVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/totalTitle"
+        app:layout_constraintEnd_toEndOf="@+id/totalPrice" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="21dp"
+        android:text="TextView"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/totalCalorieTitle"
+        app:layout_constraintStart_toEndOf="@+id/totalTitle" />
+
+    <TextView
+        android:id="@+id/totalCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="211dp"
+        android:text="TextView"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalCalorieTitle" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="287dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="100dp"
+        android:text="Go to 3rd Page"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
