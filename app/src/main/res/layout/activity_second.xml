@@ -1,114 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
     tools:context=".Second_Activity">
 
     <TextView
         android:id="@+id/secondTitle"
-        android:layout_width="166dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
         android:gravity="center"
         android:text="TextView"
         android:textColor="#9C27B0"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="34sp" />
 
     <ImageView
         android:id="@+id/secondImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
-        app:layout_constraintStart_toStartOf="@+id/countTitle"
-        app:layout_constraintTop_toBottomOf="@+id/secondTitle"
-        app:srcCompat="@drawable/juice" />
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:layout_marginTop="30sp"
+        app:srcCompat="@drawable/tea" />
 
-    <TextView
-        android:id="@+id/countTitle"
-        android:layout_width="0dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginEnd="13dp"
-        android:text="Count:"
-        android:textColor="#9C27B0"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/countVal"
-        app:layout_constraintEnd_toStartOf="@+id/countVal"
-        app:layout_constraintStart_toStartOf="@+id/totalTitle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/totalTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="Total Price:"
-        android:textColor="#9C27B0"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/totalPrice"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Calorie:"
+            android:textColor="#9C27B0"
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/totalCalorieTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Calorie"
-        android:textColor="#9C27B0"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/totalCalorie"
-        app:layout_constraintStart_toStartOf="@+id/totalTitle" />
+        <TextView
+            android:id="@+id/totalCalorie"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#EDE9E9"
+            android:textSize="24sp" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/countVal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="32dp"
-        android:text="TextView"
-        android:textColor="#FF9800"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/totalTitle"
-        app:layout_constraintEnd_toEndOf="@+id/totalPrice" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/totalPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginBottom="21dp"
-        android:text="TextView"
-        android:textColor="#FF9800"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/totalCalorieTitle"
-        app:layout_constraintStart_toEndOf="@+id/totalTitle" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Cost:"
+            android:textColor="#9C27B0"
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/totalCalorie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="211dp"
-        android:text="TextView"
-        android:textColor="#FF9800"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/totalCalorieTitle" />
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#EDE9E9"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Count:"
+            android:textColor="#9C27B0"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#F8F6F6"
+            android:textSize="24sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="287dp"
-        android:layout_height="52dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="100dp"
-        android:text="Go to 3rd Page"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="Go to Calorıe Checker"
+        android:textSize="20sp" />
+
+</LinearLayout>

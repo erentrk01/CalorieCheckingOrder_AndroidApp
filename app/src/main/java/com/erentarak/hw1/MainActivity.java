@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("order",selectedProduct);
                 intent.putExtra("TotalPrice",TotalPrice);
                 intent.putExtra("TotalCalorie",TotalCalorie);
+                intent.putExtra("Count",num);
                 startActivity(intent);
                 
 
@@ -151,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
                 selectedDrink =  stemp.getName()  + " ";
                 //imItem.setImageResource(R.mipmap.ic_launcher);
-                 clayout.setBackgroundColor(Color.CYAN);
+                 clayout.setBackgroundColor(Color.rgb(221,230,134));
             }
 
             @Override

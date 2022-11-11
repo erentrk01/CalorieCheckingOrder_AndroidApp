@@ -61,9 +61,9 @@ public class CustomSpinnerAdapter extends ArrayAdapter<Product> {
 
 
         if(position % 2 == 0)
-            constraintLayout.setBackgroundColor(Color.BLUE);
+            constraintLayout.setBackgroundColor(Color.rgb(167,129,183));
         else
-            constraintLayout.setBackgroundColor(Color.YELLOW);
+            constraintLayout.setBackgroundColor(Color.rgb(254,81,255));
 
 
         return view;
